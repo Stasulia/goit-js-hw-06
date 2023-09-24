@@ -13,14 +13,16 @@ const images = [
   },
 ];
 
-const list= document.querySelector('.gallery');
-
-const gallery = images
+const gallery = document.querySelector('.gallery');
+const galleryMarkup = images
     .map (({url, alt}) => `
-   <li> 
-   <img src= '${url}' alt='${alt}' class='image'/>
+   <li class = "gallery-item"> 
+   <img src = '${url}' alt = '${alt}' class = 'image'>
   </li>`
 )
 .join(" ");
-//gallery.classList.add('image');
-list.insertAdjacentHTML('afterbegin', gallery);
+gallery.insertAdjacentHTML('afterbegin', galleryMarkup);
+ gallery.style.listStyle = 'none';
+ gallery.style.display = 'grid';
+ gallery.style.placeItems = 'center';
+ gallery.style.gridTemplateColumns = 'repeat(3, 1fr)';

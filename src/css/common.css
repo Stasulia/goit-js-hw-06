@@ -24,13 +24,5 @@ button {
 }
 .image {
   width: 300px;
-  height: 168px;
-  
-}
-.gallery {
-  list-style: none;
-  display: grid;
-  gap: 20px;
-  
-  grid-template-rows: 168px auto 200px;
+  height: 180px;
 }
