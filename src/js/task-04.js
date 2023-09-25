@@ -1,6 +1,6 @@
-const click = document.querySelector('#counter');
-let buttonDecrement = document.querySelector('[data-action="decrement"]');
-let buttonIncrement = document.querySelector('[data-action="increment"]');
+//const click = document.querySelector('#counter');
+const buttonDecrement = document.querySelector('[data-action="decrement"]');
+const buttonIncrement = document.querySelector('[data-action="increment"]');
 const value = document.querySelector('#value');
 let counterValue = 0;
 

@@ -6,5 +6,5 @@ function handlerInput(event) {
   outputName.textContent = event.currentTarget.value || 'Anonymus';
 };
 
-inputName.addEventListener('input', (event) => {
-outputName.textContent = event.currentTarget.value || 'Anonymus';})
+// inputName.addEventListener('input', (event) => {
+// outputName.textContent = event.currentTarget.value || 'Anonymus';})

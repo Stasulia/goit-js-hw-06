@@ -7,8 +7,7 @@ function countCategories(items) {
     console.log(`Number of categories: ${totalCategories}`);
   items.forEach(function(item) {
     console.log(`Category : ${item.firstElementChild.textContent}\nElements : ${item.lastElementChild.children.length}` )
-}
-)
+})
 }  
 console.log(countCategories(items));
 

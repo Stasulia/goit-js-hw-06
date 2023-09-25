@@ -22,7 +22,7 @@ const galleryMarkup = images
 )
 .join(" ");
 gallery.insertAdjacentHTML('afterbegin', galleryMarkup);
- gallery.style.listStyle = 'none';
- gallery.style.display = 'grid';
- gallery.style.placeItems = 'center';
- gallery.style.gridTemplateColumns = 'repeat(3, 1fr)';
+gallery.style.listStyle = 'none';
+gallery.style.display = 'grid';
+gallery.style.placeItems = 'center';
+gallery.style.gridTemplateColumns = 'repeat(3, 1fr)';
