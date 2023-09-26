@@ -1,35 +1,16 @@
-// const ingredients = [
-//   'Potatoes',
-//   'Mushrooms',
-//   'Garlic',
-//   'Tomatoes',
-//   'Herbs',
-//   'Condiments',
-// ];
-const ingredients = document.querySelector('#ingredients');
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatoes',
+  'Herbs',
+  'Condiments',
+];
 
-const Potatoes = document.createElement('li');
-Potatoes.textContent = 'Potatoes';
-Potatoes.classList.add('item');
-
-const Mushrooms = document.createElement('li');
-Mushrooms.textContent = 'Mushrooms';
-Mushrooms.classList.add('item');
-
-const Garlic = document.createElement('li');
-Garlic.textContent = 'Garlic';
-Garlic.classList.add('item');
-
-const Tomatoes = document.createElement('li');
-Tomatoes.textContent = 'Tomatoes';
-Tomatoes.classList.add('item');
-
-const Herbs = document.createElement('li');
-Herbs.textContent = 'Herbs';
-Herbs.classList.add('item');
-
-const Condiments = document.createElement('li');
-Condiments.textContent = 'Condiments';
-Condiments.classList.add('item');
-
-ingredients.append(Potatoes, Mushrooms, Garlic, Tomatoes, Herbs, Condiments);
+const products = document.querySelector('#ingredients');
+ingredients.forEach(function(ingredient) {
+ const li = document.createElement('li');
+  li.textContent = ingredient;
+  li.classList.add('item');
+  products.append(li);
+})
