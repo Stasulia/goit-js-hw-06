@@ -4,8 +4,9 @@ input.addEventListener('blur', handlerInput);
 function handlerInput(event) {
     const dataLength = Number(input.dataset.length);
     const inputLength = event.currentTarget.value.length;
+    input.classList.remove('valid', 'invalid')
     if (dataLength === inputLength) {
-         input.classList.toggle('valid')
+         input.classList.add('valid')
     } else 
-        input.classList.toggle('invalid')
+        input.classList.add('invalid')
 };
